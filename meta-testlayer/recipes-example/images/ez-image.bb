@@ -1,6 +1,7 @@
 SUMMARY = "boot image for Ez-Medical devices"
-inherit core-image
 LICENSE = "MIT"
-IMAGE_INSTALL = "packagegroup-core-boot"
+
+require recipes-core/images/core-image-minimal.bb
 IMAGE_INSTALL += "usbutils"
+
 
